@@ -1,0 +1,24 @@
+@keyframes slideAndFade {
+    0% {
+      transform: translateX(0);
+      background-color: coral;
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(200px);
+      background-color: dodgerblue;
+      opacity: 0.5;
+    }
+  }
+
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 20px;
+    transition: transform 1s ease-in-out;
+  }
+
+  .animate {
+    animation: slideAndFade 2s forwards;
+  }
